@@ -17,7 +17,11 @@ export class AppComponent {
   chart = [];
   constructor(private httpClient: HttpClient) {}
 
-  ngOnInit() {
+  // ngOnInit() {
+  // }
+
+  ngOnInit(){
+              
     this.httpClient.get(this.url).subscribe((res: Data[]) => {
       res.forEach(y => {
         this.month.push(y.month);
@@ -51,4 +55,7 @@ export class AppComponent {
       });
     });
   }
+
 }
+
+
