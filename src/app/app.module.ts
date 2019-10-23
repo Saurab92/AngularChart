@@ -8,6 +8,7 @@ import { ColumnChartComponent } from './column-chart/column-chart.component';
 import { LineChartComponent } from './line-chart/line-chart.component';
 import { NavComponentComponent } from './nav-component/nav-component.component';
 import { TitleComponentComponent } from './title-component/title-component.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TitleComponentComponent } from './title-component/title-component.compo
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
